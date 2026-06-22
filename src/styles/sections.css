@@ -1,0 +1,413 @@
+/* SECTION */
+
+.section{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:120px 8%;
+
+gap:80px;
+
+}
+
+/* BOTTLE POSITION */
+
+.left{
+
+flex-direction:row-reverse;
+
+}
+
+.right{
+
+flex-direction:row;
+
+}
+
+/* LEFT SIDE */
+
+.content{
+
+width:60%;
+
+}
+
+.content h1{
+
+font-size:72px;
+
+margin-bottom:70px;
+
+color:#000;
+
+}
+
+/* PRODUCT GRID */
+
+.productGrid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:40px;
+
+}
+
+/* PRODUCT CARD */
+
+.productCard{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#fafafa,
+
+#efefef
+
+);
+
+border:
+
+1px solid
+#e7e7e7;
+
+border-radius:40px;
+
+overflow:hidden;
+
+padding:0;
+
+}
+
+/* IMAGE BOX */
+
+.productCard img{
+
+width:100%;
+
+height:360px;
+
+display:block;
+
+object-fit:cover;
+
+/* NO ANIMATION */
+
+transform:none !important;
+
+animation:none !important;
+
+transition:none !important;
+
+}
+
+/* CONTENT */
+
+.productCard h2{
+
+padding:
+
+30px
+30px
+10px;
+
+font-size:34px;
+
+color:#000;
+
+}
+
+.productCard p{
+
+padding:
+
+0
+30px
+35px;
+
+font-size:24px;
+
+color:#d5af66;
+
+}
+
+/* MAIN BOTTLE */
+
+.bottle{
+
+width:40%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.bottle img{
+
+width:100%;
+
+max-width:620px;
+
+animation:
+
+floatBottle
+
+8s linear infinite;
+
+filter:
+
+drop-shadow(
+0 0 120px
+rgba(
+255,
+200,
+100,
+0.18
+));
+
+}
+
+/* ONLY PERFUME */
+
+@keyframes floatBottle{
+
+0%{
+
+transform:
+translateY(0)
+rotate(-10deg);
+
+}
+
+50%{
+
+transform:
+translateY(-25px)
+rotate(10deg);
+
+}
+
+100%{
+
+transform:
+translateY(0)
+rotate(-10deg);
+
+}
+
+}
+/* RESPONSIVE KEEP SAME LAYOUT */
+
+/* LAPTOP */
+
+@media(max-width:1200px){
+
+.section{
+
+padding:100px 5%;
+
+gap:50px;
+
+}
+
+.content{
+
+width:58%;
+
+}
+
+.content h1{
+
+font-size:58px;
+
+}
+
+.productGrid{
+
+gap:24px;
+
+}
+
+.productCard img{
+
+height:260px;
+
+}
+
+.productCard h2{
+
+font-size:26px;
+
+}
+
+.productCard p{
+
+font-size:20px;
+
+}
+
+.bottle{
+
+width:38%;
+
+}
+
+.bottle img{
+
+max-width:450px;
+
+}
+
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+.section{
+
+padding:90px 4%;
+
+gap:30px;
+
+}
+
+.content{
+
+width:62%;
+
+}
+
+.content h1{
+
+font-size:42px;
+
+}
+
+.productGrid{
+
+grid-template-columns:
+repeat(
+2,
+1fr
+);
+
+gap:20px;
+
+}
+
+.productCard img{
+
+height:200px;
+
+}
+
+.productCard h2{
+
+font-size:20px;
+
+}
+
+.productCard p{
+
+font-size:18px;
+
+}
+
+.bottle{
+
+width:35%;
+
+}
+
+.bottle img{
+
+max-width:320px;
+
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.section{
+
+padding:70px 3%;
+
+gap:18px;
+
+}
+
+.content{
+
+width:68%;
+
+}
+
+.content h1{
+
+font-size:30px;
+
+}
+
+.productGrid{
+
+gap:14px;
+
+}
+
+.productCard{
+
+border-radius:18px;
+
+}
+
+.productCard img{
+
+height:150px;
+
+}
+
+.productCard h2{
+
+font-size:16px;
+
+padding:20px 20px 8px;
+
+}
+
+.productCard p{
+
+padding:0 20px 20px;
+
+font-size:14px;
+
+}
+
+.bottle{
+
+width:32%;
+
+}
+
+.bottle img{
+
+max-width:220px;
+
+}
+
+}
